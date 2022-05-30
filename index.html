@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=100">
+    <title>Nhóm 3.1 -Dự án về website du lịch/ địa điểm nổi tiếng</title>
+    <!-- link swiper unpkg -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- link thư viện font awesome cdn 5.15.3 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- css local  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<!-- Mục Header bắt đầu  -->
+
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>D</span>u lịch<span> 4.0</span></a>
+
+    <nav class="navbar">
+        <a href="#home">Trang chủ</a>
+        <a href="#book">Đặt lịch</a>
+        <a href="#packages">Địa điểm</a>
+        <a href="#services">Dịch Vụ</a>
+        <a href="#gallery">Sưu tập</a>
+        <a href="#review">Đánh giá</a>
+        <a href="#contact">Liên Hệ</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Tìm kiếm ở đây...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- Mục Header đóng -->
+
+<!-- Mục Đăng Nhập  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>Đăng nhập</h3>
+        <input type="email" class="box" placeholder="Điền địa chỉ email">
+        <input type="password" class="box" placeholder="Điền mật khẩu">
+        <input type="submit" value="Đăng nhập ngay" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Nhớ tài khoản</label>
+        <p>Quên mật khẩu? <a href="#">Reset ngay</a></p>
+        <p>Chưa tạo account? <a href="#">Đăng ký ngay</a></p>
+    </form>
+
+</div>
+
+<!-- Trang chủ - Mở  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Những cuộc phiêu lưu là vô giá</h3>
+        <p>Khám phá vùng đất mới với chúng tôi, những cuộc phiêu lưu đang đợi bạn!</p>
+        <a href="#" class="btn">Bắt đầu khám phá</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- Trang chủ - Đóng -->
+
+<!-- Mục Đặt lịch - Mở  -->
+
+<section class="book" id="book">
+
+    <h1 class="heading">
+        <span>Đ</span>
+        <span>ặ</span>
+        <span>t</span>
+        <span class="space"></span>
+        <span>L</span>
+        <span>ị</span>
+        <span>c</span>
+        <span>h</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/book-img.svg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>Nơi Đến</h3>
+                <input type="text" placeholder="Tên địa điểm">
+            </div>
+            <div class="inputBox">
+                <h3>Số Lượng</h3>
+                <input type="number" placeholder="Số lượng khách">
+            </div>
+            <div class="inputBox">
+                <h3>Ngày đến</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>Ngày đi</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="Đặt ngay">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- Mục Đặt Lịch - Đóng -->
+
+<!-- Mục Địa Điểm- Mở  -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>Đ</span>
+        <span>ị</span>
+        <span>a</span>
+        <span class="space"></span>
+        <span>Đ</span>
+        <span>i</span>
+        <span>ể</span>
+        <span>m</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/p-1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Rạn Nam Ô </h3>
+                <p>Là điểm du lịch luôn đem đến sự tò mò, thích thú cho khách du lịch bở vẻ đẹp hoang sơ và lôi cuốn của Đà Nẵng. Rạn Nam Ô không phải là ...</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> 1.500.000 vnd <span>2.000.000 vnd</span> </div>
+                <a href="#" class="btn">Đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Bình Liêu </h3>
+                <p>Nổi tiếng với những hàng lau trải dài tận phía chân trời, những cột mốc biên giới thiêng liêng,Bình Liêu Quảng Ninh đã trở thành...</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 980.000 Vnd <span>$1.200.000 vnd</span> </div>
+                <a href="#" class="btn">Đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Mộc Châu </h3>
+                <p>Mộc Châu là một huyện miền núi, nằm ở phía Đông Nam của tỉnh Sơn La. Không phải ngẫu nhiên mà ”Nàng thơ Tây Bắc” luôn luôn nằm trong top 10 điểm đến...</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 2.650.000 Vnd <span>3.120.000 Vnd</span> </div>
+                <a href="#" class="btn">Đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Điệp sơn </h3>
+                <p>Một điểm đặc biệt vô cùng lãng mạn mà bạn nhất định không thể bỏ qua ở đây đó chính là con đường đi bộ trên biển. Con đường này dài khoảng 700m...</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 1.250.000 Vnd <span>1.800.000 Vnd</span> </div>
+                <a href="#" class="btn">Đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Bình Ba </h3>
+                <p>Đảo Bình Ba cách trung tâm thành phố biển Nha Trang khoảng 60km về phía Nam. Từ cảng Ba Ngòi, các bạn sẽ cần phải mua vé tàu để có thể đến đảo...</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> 650.000 Vnd <span> 1.000.000 Vnd</span> </div>
+                <a href="#" class="btn">Đặt ngay</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/p-6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Vườn quốc gia Pù Mát </h3>
+                <p>Vườn quốc gia Pù Mát từng được mệnh danh là “chốn tiên cảnh” tại mảnh đất miền Trung – Nghệ An. Không chỉ thu hút du khách bởi khung cảnh thiên nhiên tuyệt vời..</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $3.000.000 Vnd <span>4.200.000 Vnd</span> </div>
+                <a href="#" class="btn">Đặt ngay</a>
+            </div>
+        </div>
+       
+    </div>
+
+</section>
+
+<!-- Mục Địa điểm - Đóng -->
+
+<!-- Mục dịch vụ - Mở  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading">
+        <span>D</span>
+        <span>ị</span>
+        <span>c</span>
+        <span>h</span>
+        <span class="space"></span>
+        <span>V</span>
+        <span>ụ</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Khách sạn giá tốt</h3>
+            <p>Nội dung</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Thức ăn đặc sản</h3>
+            <p>Nội dung</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Hướng dẫn an toàn</h3>
+            <p>Nội dung</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>Kênh thế giới</h3>
+            <p>Nội dung</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Du lịch nhanh chóng</h3>
+            <p>Nội dung</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Khám phá</h3>
+            <p>Nội dung</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Mục Dịch vụ - Đóng -->
+
+<!-- Mục Sưu tập - Mở  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>S</span>
+        <span>ư</span>
+        <span>u</span>
+        <span class="space"></span>
+        <span>T</span>
+        <span>ậ</span>
+        <span>p</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content">
+                <h3>Địa điểm tuyệt vời</h3>
+                <p>Mang lại cho bạn những khoảng khắc tuyệt nhất.</p>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>Địa điểm tuyệt vời</h3>
+                <p>Mang lại cho bạn những khoảng khắc tuyệt nhất.</p>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content">
+                <h3>Địa điểm tuyệt vời</h3>
+                <p>Mang lại cho bạn những khoảng khắc tuyệt nhất.</p>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>Địa điểm tuyệt vời</h3>
+                <p>Mang lại cho bạn những khoảng khắc tuyệt nhất.</p>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>Địa điểm tuyệt vời</h3>
+                <p>Mang lại cho bạn những khoảng khắc tuyệt nhất.</p>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>Địa điểm tuyệt vời</h3>
+                <p>Mang lại cho bạn những khoảng khắc tuyệt nhất.</p>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+            <div class="content">
+                <h3>Địa điểm tuyệt vời</h3>
+                <p>Mang lại cho bạn những khoảng khắc tuyệt nhất.</p>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+            <div class="content">
+                <h3>Địa điểm tuyệt vời</h3>
+                <p>Mang lại cho bạn những khoảng khắc tuyệt nhất.</p>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+            <div class="content">
+                <h3>Địa điểm tuyệt vời</h3>
+                <p>Mang lại cho bạn những khoảng khắc tuyệt nhất.</p>
+                <a href="#" class="btn">Xem thêm</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Mục Sưu tập - Đóng -->
+
+<!-- Mục Review - Bắt đầu  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic1.png" alt="">
+                    <h3>Ngọc Bích</h3>
+                    <p> Bạn có thể tham khảo những địa điểm du lịch rất tuyệt vời, tôi vô cùng thích nó. Nó mang lại cho tôi trải nghiệm thú vị và đồng thời sự hứng thú với du lịch</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic2.png" alt="">
+                    <h3>Thiên Nhật</h3>
+                    <p>Du lịch 4.0 chính là sợi dây gắn kết biết bao trái tim cùng nhịp đập đam mê và sở hữu một lượng thông tin khủng về các bí kíp, mẹo vặt và kinh nghiệm thực tế...</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic3.png" alt="">
+                    <h3>Sakura</h3>
+                    <p> Đây là cộng đồng nền tảng kết nối con người với các vùng miền đất nước. Ngoài việc cung cấp các tour du lịch hấp dẫn thì DL4.0 còn review tất cả các địa điểm du lịch trên đất nước</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic4.png" alt="">
+                    <h3>Đức Hùng</h3>
+                    <p>Web site thường xuyên đem đến cho bạn các cẩm nang kinh nghiệm du lịch bụi, tự túc phù hợp với những bạn trẻ tuổi thích khám phá nhiều địa điểm đẹp, văn hóa vùng miền</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Mục Review đóng-->
+
+<!-- Mục Contact bắt đầu  -->
+
+<section class="contact" id="contact">
+    
+    <h1 class="heading">
+        <span>L</span>
+        <span>i</span>
+        <span>ê</span>
+        <span>n</span>
+        <span class="space"></span>
+        <span>H</span>
+        <span>ệ</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="Tên">
+                <input type="email" placeholder="Địa chỉ email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Số điện thoại">
+                <input type="text" placeholder="Chủ đề">
+            </div>
+            <textarea placeholder="Lời nhắn" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Gửi lời nhắn">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- Mục Phản hồi đóng -->
+
+<!-- Mục thương hiệu  -->
+<section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.png" alt=""></div>
+        </div>
+    </div>
+
+</section>
+
+<!-- footer   -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Về Chúng Tôi</h3>
+            <p>Với các nguồn lực dồi dào: dịch vụ, sản phẩm đa dạng, tài chính vững mạnh, chính sách chăm sóc khách hàng chu đáo, ứng dụng công nghệ 4.0, mối quan hệ bền vững với các đối tác lớn khắp nơi trên thế giới, đội ngũ nhân viên năng động và chuyên nghiệp - Công ty luôn nỗ lực mang đến cho khách hàng những sản phẩm du lịch giá trị nhất.
+            </p>
+        </div>
+        <div class="box">
+            <h3>Chi nhánh</h3>
+            <a href="#">Viet Nam</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>Link nhanh</h3>
+            <a href="#">Trang chủ</a>
+            <a href="#">Đặt lịch</a>
+            <a href="#">Địa Điểm</a>
+            <a href="#">Dịch vụ</a>
+            <a href="#">Sưu tập</a>
+            <a href="#">Đánh giá</a>
+            <a href="#">Liên hệ</a>
+        </div>
+        <div class="box">
+            <h3>Theo dõi tại</h3>
+            <a href="https://www.facebook.com/groups/955675018480039">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> Project created by  <span> Nhóm 1 - Thành - Sang - Hoàng </span> | All rights reserved! </h1>
+
+</section>
+<!-- js thư viện-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- js local  -->
+<script src="./script.js"></script>
+<script src="./tourPlace.js"></script>
+</body>
+</html>
