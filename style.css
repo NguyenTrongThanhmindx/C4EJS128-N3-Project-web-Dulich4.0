@@ -610,20 +610,6 @@ header .search-bar-container label:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries  */
 
 @media (max-width:1200px){
@@ -633,6 +619,14 @@ header .search-bar-container label:hover{
   }
 
 }
+@media (max-width:1024px){
+
+  html{
+    font-size: 55%;
+  }
+
+}
+
 
 @media (max-width:991px){
 
