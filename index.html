@@ -33,7 +33,7 @@
         <a href="#contact">Liên Hệ</a>
     </nav>
 
-    <div class="icons">
+    <div class="icons" id="check-user-login">
         <i class="fas fa-search" id="search-btn"></i>
         <i class="fas fa-user" id="login-btn"></i>
     </div>
@@ -53,11 +53,11 @@
 
     <i class="fas fa-times" id="form-close"></i>
 
-    <form action="">
+    <form onsubmit="return logIn(this);">
         <h3>Đăng nhập</h3>
-        <input type="User" class="box" placeholder="Email của bạn">
-        <input type="password" class="box" placeholder="Điền mật khẩu">
-        <input type="submit" value="Đăng nhập ngay" class="btn">
+        <input type="User" name="username" class="box" placeholder="Tên tài khoản">
+        <input type="password" name="password" class="box" placeholder="Điền mật khẩu">
+        <button type="submit" value="Đăng nhập ngay" class="btn">Đăng nhập ngay</button>
         <input type="checkbox" id="remember">
         <label for="remember">Nhớ tài khoản</label>
         <p>Quên mật khẩu? <a href="#">Reset password</a></p>
